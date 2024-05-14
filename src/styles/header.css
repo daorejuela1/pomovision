@@ -1,0 +1,71 @@
+  .Header {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;  /* Ensure padding is included in width */
+
+  }
+
+  .Header h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;  /* Add some margin */
+    color: #ddd;
+    text-align: center;
+  }
+
+  .Header nav {
+    display: flex;
+    flex-direction: column;  /* Stack links vertically */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;  /* Take full width of the header */
+  }
+
+  .Header__item {
+    margin-bottom: 2rem;  /* Add space between list items */
+    list-style: none;
+    color: #ddd;
+  }
+  
+  .Header__item a {
+    /* display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none; */
+    color: inherit;
+    text-decoration: none;
+    display: flex;  /* Allow for icons next to text */
+    align-items: center;  /* Align icons and text vertically */
+    padding: 0.5rem;  /* Add padding for hover effect */
+  }
+   
+  .Header__item a:active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .Header__item a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .Header {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .Header__item {float: left;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .Header__item {
+      text-align: center;
+      float: none;
+    }
+  }
