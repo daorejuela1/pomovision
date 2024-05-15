@@ -1,22 +1,22 @@
 import '../styles/checkbox.css';
+import { MdDeleteForever, MdCircle, MdCheck } from 'react-icons/md';
 
 const Checkbox = props => {
-  // (A)
   const {
-    onChange,
-    data: { id, date, description, done }
+    data: { id, date, description, done, toggleDone, deleteTodo }
   } = props;
   return (
       <label className="Checkbox">
         <p className="Checkbox__date"> Created at: {date} </p>
         <p className="Checkbox__text"> {description}</p>
       <p>Done:</p>
-        <input
-          name={id}
-          type="checkbox"
-          defaultChecked={done}
-          onChange={onChange}
-        />
+      <div onClick={() => toggleDone(id)}>
+	{!done ? (<MdCircle />) : (	<MdCheck/>)} 
+    </div>
+        <MdDeleteForever 
+            onClick={() => deleteTodo(id)}
+			className="icon delete-icon"
+		/>
       </label>
   );
 };

@@ -1,8 +1,7 @@
 import React from 'react';
 import '../styles/timer.css';
 import { useTimer } from 'react-timer-hook';
-
-
+import { useNavigate } from "react-router-dom";
 
 function formatTime(time) {
     time = String(time);
@@ -17,6 +16,7 @@ function setTime(delay = 30) {
 }
 
 function Timer({ props }) {
+  const navigate = useNavigate();
   const {
     seconds,
     minutes,
@@ -26,7 +26,7 @@ function Timer({ props }) {
     restart,
   } = useTimer({ autoStart: false,
     expiryTimestamp: setTime(props.delay),
-    onExpire: () => console.warn('onExpire called')
+    onExpire: () => navigate('/rest')
 });
 
 const buttonsData = [

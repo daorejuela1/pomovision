@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 div.content {

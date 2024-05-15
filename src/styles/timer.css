@@ -3,12 +3,18 @@
     padding-bottom: 50px;
   }
 
-.Timer--work {
-}
-
 .Timer__display {
     font-size: 10rem;
     margin-bottom: 20px;
+}
+
+  
+@media screen and (max-width: 400px) {
+.Timer__display {
+    font-size: 8rem;
+    margin-bottom: 20px;
+}
+  
 }
 
 .Timer__text {

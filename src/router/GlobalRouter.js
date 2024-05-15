@@ -4,6 +4,7 @@ import NotFound from '../views/NotFound';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Home from "../views/Home";
+import Rest from '../views/Rest';
 
 function GlobalRouter() {
     return (
@@ -13,6 +14,7 @@ function GlobalRouter() {
                 <Route path="/restaurants" element={<Layout><Overview /></Layout>} />
                 <Route path="/restaurants/:restaurantId" element={<Layout><RestaurantDetails /></Layout>} /> */}
                 <Route path="/" element={<Layout><Home/></Layout>} />
+                <Route path="/rest" element={<Layout><Rest/></Layout>} />
                 <Route path="*" element={<Layout><NotFound /></Layout>} />
             </Routes>
         </BrowserRouter>
