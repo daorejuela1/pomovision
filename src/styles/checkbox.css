@@ -1,0 +1,46 @@
+.Checkbox {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #eee; /* Light gray background */
+  cursor: pointer; /* Indicate clickable behavior */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.Checkbox:hover {
+  background-color: #ddd; /* Slightly darker on hover */
+}
+
+.Checkbox input[type="checkbox"] {
+  appearance: none; /* Hide default checkbox appearance */
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff; /* White checkbox */
+  border: 1px solid #ccc; /* Gray border */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition on click */
+}
+
+.Checkbox input[type="checkbox"]:checked {
+  background-color: #4CAF50; /* Green background when checked */
+  border-color: #4CAF50; /* Green border when checked */
+}
+
+
+.Checkbox__text {
+  flex: 1;
+  color: #333; /* Darker text color */
+  font-weight: bold;
+  text-align: left;
+  width: 60%;
+  margin: 0;
+}
+
+.Checkbox__date {
+  width: 30%;
+  margin: 5px;
+}

@@ -1,0 +1,45 @@
+.Timer {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+.Timer--work {
+}
+
+.Timer__display {
+    font-size: 10rem;
+    margin-bottom: 20px;
+}
+
+.Timer__text {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.Timer__button {
+    background-color: #333; /* Adjust base color as desired */
+    font-size: 1.1rem;
+    color: white;
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Add smooth transitions */
+  }
+  
+  .Timer__button:hover {
+    background-color: #2ecc71; /* Adjust hover color as desired */
+    transform: scale(1.02); /* Add subtle hover scale effect */
+  }
+  
+  .Timer__button:active {
+    transform: scale(0.98); /* Indicate click with slight scale-in */
+  }
+  
+  /* Accessibility considerations */
+  .Timer__button:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.2); /* Focus outline for keyboard users */
+  }

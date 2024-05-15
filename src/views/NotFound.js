@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/notfound.css'; // Import the CSS file
 import tomatoNotFound from '../assets/tomato.jpeg';
 import { Link } from 'react-router-dom';
