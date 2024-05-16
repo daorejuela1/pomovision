@@ -1,27 +1,29 @@
 import React from 'react';
 import '../styles/header.css';  // Import the CSS file
 import { AiFillHome, AiOutlineUser, AiOutlinePlayCircle, AiOutlineCheckCircle } from 'react-icons/ai';
+import { useNavigate } from "react-router-dom";
 
 
 const Header = () => {
+  const navigate = useNavigate();
   const links = [
     {
-      path: "#",
+      path: navigate('/'),
       text: "Home",
       icon: <AiFillHome />
     },
     {
-      path: "#",
+      path: navigate('/videos'), 
       text: "Videos",
       icon: <AiOutlinePlayCircle />
     },
     {
-      path: "#",
+      path: navigate('/rest'),
       text: "Progress",
       icon: <AiOutlineCheckCircle />
     },
     {
-      path: "#",
+      path: navigate('/about'), 
       text: "About",
       icon: <AiOutlineUser />
     }
