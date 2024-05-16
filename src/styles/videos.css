@@ -1,5 +1,7 @@
-.videos {
+@media screen and (min-width: 700px) {
+    .videos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
     grid-gap: 20px;
+    }
   }
