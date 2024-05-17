@@ -18,7 +18,7 @@ const Header = () => {
     },
     {
       path: '/rest',
-      text: "Progress",
+      text: "Rest",
       icon: <AiOutlineCheckCircle />
     },
     {

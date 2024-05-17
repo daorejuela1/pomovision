@@ -5,6 +5,11 @@ import SearchBar from '../components/SearchBar';
 import VideoList from '../components/VideoList';
 import { useVideoGrid } from '../hooks/useVideoGrid';
 
+/**
+ * Renders a list of videos and associated components.
+ *
+ * @return {JSX.Element} The rendered React component
+ */
 const Videos = () => {
     const [videoList, setVideoList] = useState(() => {
         return JSON.parse(localStorage.getItem('videos')) || []

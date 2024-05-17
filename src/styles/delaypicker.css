@@ -1,4 +1,3 @@
-/* DelayPicker.css */
 .DelayPicker {
     display: flex;
     flex-direction: row;
@@ -13,11 +12,11 @@
   }
   
   .DelayPicker div {
-    margin-bottom: 0; /* Removing bottom margin as elements are now in a row */
+    margin-bottom: 0;
   }
   
   .DelayPicker input[type="number"] {
-    width: 80px; /* Adjust width as necessary */
+    width: 80px; 
     padding: 10px;
     font-size: 16px;
     border: 2px solid #ccc;

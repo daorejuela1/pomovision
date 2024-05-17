@@ -1,6 +1,10 @@
 import  { useState } from 'react';
 import '../styles/searchbar.css';
 
+/**
+ * SearchBar component with inputHandler and handleSubmit functions.
+ * ToDo: implement with elasticSearch in the future
+ */
 const SearchBar = () => {
   const [searchText, setSearchText] = useState('');
 
@@ -11,7 +15,6 @@ const SearchBar = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle search submission here
   };
 
   return (

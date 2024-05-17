@@ -11,7 +11,7 @@ function formatTime(time) {
 
 function setTime(delay = 30) {
     const time = new Date();
-    time.setSeconds(time.getSeconds() + delay)
+    time.setSeconds(time.getSeconds() + (delay * 60));
     return time
 }
 

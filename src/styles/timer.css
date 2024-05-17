@@ -1,14 +1,23 @@
 .Timer {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
 
 .Timer__display {
     font-size: 10rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
+.Timer--rest .Timer__display {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
   
+.Timer--longRest .Timer__display {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 400px) {
 .Timer__display {
     font-size: 8rem;

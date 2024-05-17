@@ -2,14 +2,19 @@ import React, { useState, useEffect } from 'react';
 import '../styles/notfound.css'; // Import the CSS file
 import Timer from '../components/Timer';
 import Video from '../components/Video';
+/**
+ * Renders the Rest component which handles pomodoro timer functionality.
+ *
+ * @return {JSX.Element} The React component rendering the pomodoro timer and video components.
+ */
 const Rest = () => {
 
   const [delays] = useState(() => {
     return JSON.parse(localStorage.getItem('delays')) || {
-    work: 20,
-    rest: 5,
-    longRest: 10,
-}
+      work: 25,
+      rest: 5,
+      longRest: 15,
+    }
   });
 
   let [restCounter, setRestCounter] = useState(() => {
@@ -24,7 +29,6 @@ const Rest = () => {
 
   function handleRestPomodoroComplete() {
     // Increment the count of completed work pomodoros
-    console.log(`Completed ${restCounter} work pomodoros`);
     restCounter += 1;
     localStorage.setItem('restCounter', restCounter);
     setRestCounter(restCounter);

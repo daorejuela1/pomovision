@@ -3,23 +3,19 @@
 }
 
 .FormTodo__row--text {
-  /* Base styles */
   padding: 10px 15px;
-  border: none; /* Remove default border */
+  border: none;
   border-bottom: 1px solid transparent; /* Underline appears on focus */
   font-size: 16px;
-  outline: none; /* Remove default outline */
-  transition: border-color 0.3s ease; /* Smooth transition on focus */
-  border-color: #333; /* Green underline on focus */
+  outline: none;
+  transition: border-color 0.3s ease;
+  border-color: #333; 
   width: 30%;
-  /* Focus effect */
   &:focus {
-    border-color: #2ecc71; /* Green underline on focus */
+    border-color: #2ecc71;
   }
 }
 
 .FormTodo__row--button {
-    /* Base styles */
     font-size: 20px;
-  
   }

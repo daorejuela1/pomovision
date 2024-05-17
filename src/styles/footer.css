@@ -6,15 +6,14 @@
     width: 100%;
     height: 30px;
     color: white;
-    text-align: right; /* Maintain right alignment for copyright */
-    display: flex; /* Enable flexbox for alignment */
-    align-items: center; /* Vertically center content */
+    text-align: right;
+    display: flex;
+    align-items: center;
   }
   
   .Footer__copyright {
     font-size: 0.8rem;
     margin: 0;
-    /* Adjust margin or padding if needed for spacing */
   }
   
   .Footer__github-link {

@@ -12,8 +12,6 @@ function GlobalRouter() {
     return (
         <BrowserRouter>
             <Routes>
-                {/* <Route path="/" element={<Landing />} />
-                <Route path="/restaurants/:restaurantId" element={<Layout><RestaurantDetails /></Layout>} /> */}
                 <Route path="/" element={<Layout><Home/></Layout>} />
                 <Route path="/rest" element={<Layout><Rest/></Layout>} />
                 <Route path="/videos" element={<Layout><Videos/></Layout>} />

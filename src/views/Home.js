@@ -3,12 +3,17 @@ import '../styles/notfound.css'; // Import the CSS file
 import Timer from '../components/Timer';
 import TaskContainer from '../components/TaskContainer';
 import DelayPicker from '../components/DelayPicker';
+/**
+ * Renders the Home component with delay settings and timer components.
+ *
+ * @return {ReactNode} The rendered React component for the Home page.
+ */
 const Home = () => {
     const [delays, setDelays] = useState(() => {
         return JSON.parse(localStorage.getItem('delays')) || {
-        work: 20,
+        work: 25,
         rest: 5,
-        longRest: 10,
+        longRest: 15,
     }
       });
 
