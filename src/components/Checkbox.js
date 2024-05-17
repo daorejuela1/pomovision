@@ -1,6 +1,5 @@
 import '../styles/checkbox.css';
-import { MdDeleteForever, MdQuestionMark, MdCheck } from 'react-icons/md';
-
+import { FaRegCircle, FaRegCircleCheck, FaTrashCan } from "react-icons/fa6";
 const Checkbox = props => {
   const {
     data: { id, date, description, done, toggleDone, deleteTodo }
@@ -11,9 +10,9 @@ const Checkbox = props => {
         <p className="Checkbox__text"> {description}</p>
       <p>Done:</p>
       <div onClick={() => toggleDone(id)}>
-	{!done ? (<MdQuestionMark/>) : (	<MdCheck/>)} 
+	{!done ? (<FaRegCircle/>) : (	<FaRegCircleCheck/>)} 
     </div>
-        <MdDeleteForever 
+        <FaTrashCan
             onClick={() => deleteTodo(id)}
 			className="icon delete-icon"
 		/>

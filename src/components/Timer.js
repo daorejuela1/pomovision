@@ -3,6 +3,7 @@ import '../styles/timer.css';
 import { useTimer } from 'react-timer-hook';
 import { useNavigate } from "react-router-dom";
 import BodyButton from './BodyButton';
+
 function formatTime(time) {
     time = String(time);
     time = time.padStart(2, "0");
