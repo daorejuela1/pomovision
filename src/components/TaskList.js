@@ -1,6 +1,4 @@
-import { useState, useEffect } from "react";
 import Checkbox from "./Checkbox";
-import {AiOutlineDelete} from 'react-icons/ai';
 import '../styles/tasklist.css';
 
 const TaskList = (props) => {

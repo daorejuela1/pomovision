@@ -5,7 +5,7 @@ import TaskContainer from '../components/TaskContainer';
 const Home = () => {
   return (
     <React.Fragment>
-    <Timer props={{delay: 20, category: 'work'}}/>
+    <Timer props={{delay: 20, category: 'work', autoStart: false}}/>
     <TaskContainer />
     </React.Fragment>
 

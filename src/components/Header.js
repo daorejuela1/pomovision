@@ -1,29 +1,28 @@
 import React from 'react';
 import '../styles/header.css';  // Import the CSS file
 import { AiFillHome, AiOutlineUser, AiOutlinePlayCircle, AiOutlineCheckCircle } from 'react-icons/ai';
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
-  const navigate = useNavigate();
   const links = [
     {
-      path: navigate('/'),
+      path: '/',
       text: "Home",
       icon: <AiFillHome />
     },
     {
-      path: navigate('/videos'), 
+      path: '/videos', 
       text: "Videos",
       icon: <AiOutlinePlayCircle />
     },
     {
-      path: navigate('/rest'),
+      path: '/rest',
       text: "Progress",
       icon: <AiOutlineCheckCircle />
     },
     {
-      path: navigate('/about'), 
+      path: '/about', 
       text: "About",
       icon: <AiOutlineUser />
     }
@@ -35,7 +34,9 @@ const Header = () => {
       <nav>
         <ul>
           {links.map(({ path, text, icon }) => (
-            <li className='Header__item' key={path}> <a href={path}> {icon} {text} </a> </li>
+            <Link to={path} key={text}>
+                <li className='Header__item'> {icon}  {text} </li>
+            </Link>
           ))}
         </ul>
       </nav>

@@ -7,7 +7,8 @@ const TaskContainer = () => {
     const [todos, setTodos] = useState(() => {
         return JSON.parse(localStorage.getItem('todos')) || []
     });
-  const handleAddItem = (addItem) => {
+  
+const handleAddItem = (addItem) => {
     setTodos([...todos, addItem]); 
   };
 

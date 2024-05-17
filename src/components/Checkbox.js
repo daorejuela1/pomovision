@@ -1,5 +1,5 @@
 import '../styles/checkbox.css';
-import { MdDeleteForever, MdCircle, MdCheck } from 'react-icons/md';
+import { MdDeleteForever, MdQuestionMark, MdCheck } from 'react-icons/md';
 
 const Checkbox = props => {
   const {
@@ -11,7 +11,7 @@ const Checkbox = props => {
         <p className="Checkbox__text"> {description}</p>
       <p>Done:</p>
       <div onClick={() => toggleDone(id)}>
-	{!done ? (<MdCircle />) : (	<MdCheck/>)} 
+	{!done ? (<MdQuestionMark/>) : (	<MdCheck/>)} 
     </div>
         <MdDeleteForever 
             onClick={() => deleteTodo(id)}
