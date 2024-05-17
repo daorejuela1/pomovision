@@ -23,7 +23,7 @@ const Videos = () => {
         <SearchBar />
         <div className='videos'>
         {videoGrid.map(video =>
-        <VideoPreview props={{ videoId: video.id, title: video.title, description: video.description}} videoList={videoList} setVideoList={setVideoList}/>
+        <VideoPreview key={video.id} props={{ videoId: video.id, title: video.title, description: video.description}} videoList={videoList} setVideoList={setVideoList}/>
         )}
         </div>
     </React.Fragment>

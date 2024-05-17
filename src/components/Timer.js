@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/timer.css';
 import { useTimer } from 'react-timer-hook';
 import { useNavigate } from "react-router-dom";
@@ -17,7 +17,7 @@ function setTime(delay = 30) {
 
 function Timer({ props }) {
   const navigate = useNavigate();
-  const {
+    const {
     seconds,
     minutes,
     isRunning,
@@ -26,8 +26,22 @@ function Timer({ props }) {
     restart,
   } = useTimer({ autoStart: props.autoStart,
     expiryTimestamp: setTime(props.delay),
-    onExpire: () => props.category === 'work' ? navigate('/rest') : navigate('/')
+    onExpire: () => {
+        if (props.category === 'work') { 
+         navigate('/rest') } 
+        else {
+            props.onTimerComplete();
+         navigate('/')
+        }
+    }
 });
+
+useEffect (() => {
+    restart(setTime(props.delay))
+        if (props.category === 'work') { 
+            pause()
+        }
+}, [props.delay, props.category, restart, pause]);
 
 const [videoList] = useState(() => {
     return JSON.parse(localStorage.getItem('videos')) || []

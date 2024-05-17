@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   return (
-    <div className="not-found">
+    <div className="NotFound">
       <h1>Uh oh! code 404 Tomato Timer Lost in Time!</h1>
       <img src={tomatoNotFound} alt="Lost Tomato Timer" />  {/* Replace with lost tomato GIF */}
       <p>

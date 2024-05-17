@@ -1,27 +1,31 @@
-.NotFound {
+.About {
     text-align: center;
     padding: 50px;
     font-family: Arial, sans-serif;
   }
   
-  .NotFound h1 {
+  .About h1 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
   
-  .NotFound img {
+  .About li{
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .About img {
     width: 300px;
     height: auto;
     margin-bottom: 20px;
   }
   
-  .NotFound p {
+  .About p {
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 20px;
   }
   
-  .NotFound a {
+  .About a {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
@@ -30,6 +34,6 @@
     font-weight: bold;
   }
   
-  .NotFound a:hover {
+  .About a:hover {
     background-color: #4f4f4f;
   }

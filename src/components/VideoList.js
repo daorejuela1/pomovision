@@ -15,9 +15,10 @@ const VideoList = ({videoList, setVideoList}) => {
         <h1>List of Videos</h1>
             <ol>
         {videoList && videoList.map((video) => (
-                <li>{video.title} <MdDeleteForever onClick={() => deleteVideo(video.id)}
+                <li key={video.id}>{video.title} <MdDeleteForever onClick={() => deleteVideo(video.id)}
                 className="VideoList__delete"
-                /></li>
+                />
+                </li>
         ))}
             </ol>
         <BodyButton text="Confirm" path="/" />

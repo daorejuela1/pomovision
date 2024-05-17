@@ -1,15 +1,14 @@
 import {useEffect, useState} from "react";
 
+/**
+ * Custom hook that fetches video data and sets it after a delay.
+ *
+ * @return {Array} The list of video data fetched after a delay.
+ */
 export const useVideoGrid = () => {
 
     const [videoList, setVideoList] = useState([]);
-    /**
-     * Se hace uso de useEffect para definir un efecto de montaje que traerá la información de ingredientes
-     * del back-end en el primer renderizado.
-     */
     useEffect(() => {
-        //fetch(process.env.REACT_APP_GW_URL).then((res) => res.json()).then((res) => setRestaurants(res));
-
         setTimeout(() => {
             setVideoList([
                     {
@@ -43,7 +42,7 @@ export const useVideoGrid = () => {
                       "description": "Un nuevo supercomputador podría evitar experimentos con animales dirigidos a curar el cáncer"
                     },
             ]);
-        }, 2500);
+        }, 500);
     }, []);
 
     return videoList;

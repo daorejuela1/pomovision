@@ -64,7 +64,6 @@ const Video = () => {
                 }, 1000); // Polling interval in milliseconds (every second)
             } else {
                 clearInterval(intervalId);
-                console.log("Video stopped or paused" + intervalId);
             }
         }
 
